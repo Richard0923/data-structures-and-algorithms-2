@@ -12,4 +12,4 @@ any of the built-in methods available to your language, return an array with the
 TBD
 ## Solution
 <!-- Embedded whiteboard image -->
-![whiteboard](https://github.com/Richard0923/data-structures-and-algorithms/blob/master/code-challenges/array-shift/ArrayShift/assets/IMG_20190612_113103.jpg)
+![screenshot](assets/IMG_20190612_113103.jpg)
