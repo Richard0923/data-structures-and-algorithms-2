@@ -23,8 +23,11 @@ namespace ArrayShift
             }
 
             int[] newArray = arr;
-            Console.WriteLine(newArray);
-
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+                Console.ReadLine();
+            }
             return newArray;
         }
     }
