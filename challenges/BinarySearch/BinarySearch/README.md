@@ -12,4 +12,4 @@ any of the built-in methods available to your language, return an array with the
 TBD
 ## Solution
 <!-- Embedded whiteboard image -->
-![screenshot](/assets/Image from iOS.jpg)
+![screenshot](/assets/ImagefromiOS.jpg)
