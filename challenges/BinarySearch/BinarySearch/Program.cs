@@ -2,14 +2,13 @@
 
 namespace BinarySearch
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             int[] array = { 4, 8, 15, 16, 23, 42 };
             int searchkey = 15;
-            BinarySearch(array, searchkey);
+            int answer = BinarySearch(array, searchkey);
         }
 
         static int BinarySearch(int[] arr, int searchkey)
@@ -24,8 +23,7 @@ namespace BinarySearch
                 {
                     left = middle + 1;
                 }
-
-                if(arr[middle] > searchkey)
+                else if(arr[middle] > searchkey)
                 {
                     right = middle - 1;
                 }
@@ -34,7 +32,7 @@ namespace BinarySearch
                     return middle;
                 }
             }
-
+            Console.WriteLine(middle);
             return middle;
         }
     }
