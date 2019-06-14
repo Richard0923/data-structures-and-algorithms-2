@@ -6,29 +6,34 @@ namespace ArrayShift
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
             int[] arr = { 2, 3, 5, 9, 4 };
             int value = 7;
-            insertShiftArray(arr, value);
+            Console.WriteLine(String.Join(", ", insertShiftArray(arr, value)));
+            Console.ReadLine();
         }
 
         static int[] insertShiftArray(int[] arr, int value)
         {
-            for (int i = 0; i <= arr.Length; i++)
+            //Local variables for method 
+            int mid = arr.Length /2;
+            int[] newArr = new int[arr.Length + 1];
+            int counter = 0;
+
+            for(int i = 0; i < newArr.Length; i++)
             {
-                if (i >= (arr.Length) / 2 && i < arr.Length + 1)
+                if(i == mid)
                 {
-                    i = value;
+                    newArr[i] = value;
+                }
+                else
+                {
+                    newArr[i] = arr[counter];
+                    counter++;
                 }
             }
 
-            int[] newArray = arr;
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-                Console.ReadLine();
-            }
-            return newArray;
+            return newArr;
+
         }
     }
 }
