@@ -13,4 +13,4 @@ Creating 3 methods:
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-![Image 1](/assets/pokegame1.PNG)
+![Image 1](/assets/Linkedlist.jpg)
