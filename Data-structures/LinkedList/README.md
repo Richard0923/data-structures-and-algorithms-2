@@ -14,3 +14,23 @@ Creating 3 methods:
 
 ## Solution
 ![Image 1](/assets/Linkedlist.jpg)
+
+
+
+# Challenge Summary
+<!-- Short summary or background information -->
+Write a method that takes in an integer k then goes though an linked list and returns the value that of the position that is equal to k from the end of the linked list.
+
+## Challenge Description
+<!-- Description of the challenge -->
+Creating 3 methods:
+1. Write a method for the Linked List class which takes a number k
+2. Return the node’s value that is k from the end of the linked list.
+
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+The apporach we took was having a while loop and setting the current to the last node of the linked list and having a second current that k distance  away from that node   
+
+## Solution
+![Image 1](/assets/Lin.jpg)
