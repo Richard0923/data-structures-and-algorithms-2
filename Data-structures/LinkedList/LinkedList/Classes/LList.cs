@@ -48,19 +48,18 @@ namespace LinkedList.Classes
         }
 
         public bool Inculdes(int value)
-        {
+        { //need tests
             Node current = Head;
             while (current != null)
             {
                 if (current.Value.Equals(value))
                 {
-                    Console.Write("True");
+                    Console.Write($"True it includes {value}");
                     return true;
                 }
-                //dont know what this error is need to find out 
-                current.Next();
+                
+               current = current.Next;
             }
-
             return false;
         }
     }

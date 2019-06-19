@@ -21,6 +21,7 @@ namespace LinkedList
             list.Insert(11);
 
             list.Print();
+            Console.WriteLine("\n");
         }
 
     }
