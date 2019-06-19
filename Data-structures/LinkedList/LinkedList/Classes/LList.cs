@@ -46,5 +46,22 @@ namespace LinkedList.Classes
             Console.Write("null");
             Console.Read();
         }
+
+        public bool Inculdes(int value)
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                if (current.Value.Equals(value))
+                {
+                    Console.Write("True");
+                    return true;
+                }
+                //dont know what this error is need to find out 
+                current.Next();
+            }
+
+            return false;
+        }
     }
 }
