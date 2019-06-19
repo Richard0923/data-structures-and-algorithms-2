@@ -8,6 +8,11 @@ namespace LinkedList.Classes
     {
         public Node Head { get; set; }
 
+        public LList()
+        {
+
+        }
+
         public LList(int value)
         {
             Node node = new Node(value);
@@ -18,11 +23,28 @@ namespace LinkedList.Classes
         /// </summary>
         /// <param name="value"></param>
         public void Insert(int value)
-        {//need to check that everythong works
-            
+        {
+            //need to check that everythong works
             Node node = new Node(value);
             node.Next = Head;
             Head = node;
+        }
+
+        /// <summary>
+        /// prints out the Linked List 
+        /// </summary>
+        public void Print()
+        {
+            Node current = Head;
+
+            while(current != null)
+            {
+                Console.Write($"{current.Value} => ");
+                current = current.Next;
+            }
+
+            Console.Write("null");
+            Console.Read();
         }
     }
 }
