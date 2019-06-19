@@ -33,4 +33,4 @@ Creating 3 methods:
 The apporach we took was having a while loop and setting the current to the last node of the linked list and having a second current that k distance  away from that node   
 
 ## Solution
-![Image 1](/assets/Lin.jpg)
+![Image 1](/assets/k-thChallenge.jpg)
