@@ -1,14 +1,18 @@
-using System;
 using Xunit;
+
 
 namespace LinkedListsTests
 {
     public class UnitTest1
     {
+        
         [Fact]
-        public void Test1()
+        public void IncludesValueInLListTest()
         {
+            
 
+            
+            Assert.True(list.Includes(23));
         }
     }
 }

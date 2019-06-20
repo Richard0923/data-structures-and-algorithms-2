@@ -7,10 +7,10 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            LList1();
+            PopulateList();
         }
 
-        static void LList1()
+        static void PopulateList()
         {
             LList list = new LList();
 
@@ -22,6 +22,7 @@ namespace LinkedList
 
             list.Print();
             Console.WriteLine("\n");
+            list.Inculdes();
         }
 
     }
