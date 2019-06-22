@@ -1,4 +1,5 @@
 using Xunit;
+using LinkedList.Classes;
 
 
 namespace LinkedListsTests
@@ -9,10 +10,9 @@ namespace LinkedListsTests
         [Fact]
         public void IncludesValueInLListTest()
         {
-            
+            LList lltest = new LList(5);
 
-            
-            Assert.True(list.Includes(23));
+            Assert.True(lltest.Inculdes(5));
         }
     }
 }

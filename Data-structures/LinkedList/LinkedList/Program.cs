@@ -12,7 +12,7 @@ namespace LinkedList
 
         static void PopulateList()
         {
-            LList list = new LList();
+            LList list = new LList(11);
 
             list.Insert(56);
             list.Insert(42);
@@ -21,8 +21,10 @@ namespace LinkedList
             list.Insert(11);
 
             list.Print();
-            Console.WriteLine("\n");
-            list.Inculdes();
+            
+            list.Inculdes(56);
+            list.Inculdes(77);
+            Console.ReadLine();
         }
 
     }
