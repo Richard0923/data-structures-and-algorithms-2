@@ -7,6 +7,8 @@ namespace LinkedList.Classes
     public class LList
     {
         public Node Head { get; set; }
+        public Node current { get; set; }
+        
 
        
         public LList(int value)
@@ -59,6 +61,17 @@ namespace LinkedList.Classes
                current = current.Next;
             }
             return false;
+        }
+
+        public static void Append(int value)
+        {
+            Node newvalue = new Node(value);
+            Node current = Head;
+
+            while (current.Next != null)
+            {
+                
+            }
         }
 
         public static void PopulateList()
