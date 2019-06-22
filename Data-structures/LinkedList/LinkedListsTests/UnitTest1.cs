@@ -9,6 +9,7 @@ namespace LinkedListsTests
     {
         
         [Fact]
+        
         public void IncludesValueInLListTest()
         {
             LList lltest = new LList(5);
@@ -21,9 +22,22 @@ namespace LinkedListsTests
         public void AppendTotheendTest()
         {
             LList lltest = new LList(5);
-            lltest.append(6);
+            lltest.Append(6);
 
-            Assert.True(lltest.Inculdes(5));
+            Assert.True(lltest.Inculdes(6));
         }
+
+        [Fact]
+        public void InsertBeforeTest()
+        {
+            LList lltest = new LList(5);
+            lltest.Append(6);
+            lltest.Append(13);
+            lltest.Append(15);
+            lltest.InsertBefore(6, 15);
+
+            Assert.True(lltest.Inculdes(6));
+        }
+
     }
 }

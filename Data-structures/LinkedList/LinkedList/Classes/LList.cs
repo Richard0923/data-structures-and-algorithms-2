@@ -7,7 +7,7 @@ namespace LinkedList.Classes
     public class LList
     {
         public Node Head { get; set; }
-        public Node current { get; set; }
+        public Node Current { get; set; }
         
 
        
@@ -63,14 +63,36 @@ namespace LinkedList.Classes
             return false;
         }
 
-        public static void Append(int value)
+        /// <summary>
+        /// Adds a new node to the end of the list 
+        /// </summary>
+        /// <param name="value"></param>
+        public void Append(int value)
         {
             Node newvalue = new Node(value);
             Node current = Head;
 
             while (current.Next != null)
             {
-                
+                current = current.Next;
+            }
+            current.Next = newvalue;
+        }
+
+        /// <summary>
+        /// Inserts a new node before the node that is equal to the value you give it 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="newValue"></param>
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+            while(Current.Next != null)
+            {
+                if(Current.Next.Value == value)
+                {
+
+                }
             }
         }
 
