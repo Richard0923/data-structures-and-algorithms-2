@@ -19,11 +19,10 @@ namespace LinkedList
             list.Insert(23);
             list.Insert(72);
             list.Insert(11);
+            list.InsertBefore(42, 7);
 
             list.Print();
             
-            list.Inculdes(56);
-            list.Inculdes(77);
             Console.ReadLine();
         }
 

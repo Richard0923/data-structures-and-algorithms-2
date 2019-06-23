@@ -91,23 +91,14 @@ namespace LinkedList.Classes
             {
                 if(Current.Next.Value == value)
                 {
-
+                    Node tempNode = new Node(value);
+                    Current.Next = tempNode;
+                    break;
                 }
+                Current = Current.Next;
             }
         }
 
-        public static void PopulateList()
-        {
-            LList list = new LList(10);
-
-            list.Insert(56);
-            list.Insert(42);
-            list.Insert(23);
-            list.Insert(72);
-            list.Insert(11);
-
-            list.Print();
-            Console.WriteLine("\n");
-        }
+        
     }
 }
