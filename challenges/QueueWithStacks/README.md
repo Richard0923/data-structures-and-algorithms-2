@@ -5,8 +5,11 @@ Create a Class called PseudoQueue and manipulate 2 stacks to act like a queue
 ## Challenge Description
 <!-- Description of the challenge -->
 Classes:
-  1.PseudoQueue
-  2.Stack
+
+  1. PseudoQueue
+  
+  2. Stack
+  
 Creating 2 methods:
 1. Dequeue removes a node for stack2 if its not empty 
 2. Enqueue adds a node to stack1
