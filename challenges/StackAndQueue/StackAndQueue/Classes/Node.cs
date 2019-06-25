@@ -1,18 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using StackAndQueue.Classes;
 
 namespace StackAndQueue.Classes
 {
-    public class Node
+    public class Node<T>
     {
-        public int Value { get; set; }
-        public Node Next { get; set; }
+        public T Value { get; set; }
+        public Node<T> Next { get; set; }
         
         public Node() { }
 
-        public Node(int value)
+        public Node(T value)
         {
             Value = value;
         }
