@@ -56,10 +56,52 @@ namespace StackAndQueueTests
         [Fact]
         public void EmptyStacktest()
         {
-            Stack<string> mystack = new Stack<string>();
+            Stack<int> mystack = new Stack<int>();
 
-            Assert.Null(mystack.Top.Value);
-
+            Assert.Throws<NullReferenceException>(() => mystack.Peek());
         }
+
+        [Fact]
+        public void EnqueueTest()
+        {
+            Queue<string> myQueue = new Queue<string>("test");
+            myQueue.Enqueue("test2");
+            Assert.Equal("test2", myQueue.Rear.Value);
+        }
+
+        [Fact]
+        public void EnqueueMulitpleValueTest()
+        {
+            Queue<int> myQueue = new Queue<int>(7);
+            myQueue.Enqueue(14);
+            myQueue.Enqueue(19);
+            myQueue.Enqueue(123);
+            Assert.Equal(123, myQueue.Rear.Value);
+        }
+
+        [Fact]
+        public void DequeueTest()
+        {
+            Queue<int> myQueue = new Queue<int>(22);
+            myQueue.Enqueue(33);
+            myQueue.Enqueue(67);
+            myQueue.Enqueue(77);
+
+            Assert.Equal(22, myQueue.Dequeue());
+        }
+
+        [Fact]
+        public  void PeekQueueTest()
+        {
+            Queue<int> myQueue = new Queue<int>(22);
+            myQueue.Enqueue(33);
+            myQueue.Enqueue(67);
+            myQueue.Enqueue(77);
+
+            Assert.Equal(22, myQueue.Peek());
+        }
+
+        [Fact]
+        public void 
     }
 }
