@@ -52,7 +52,7 @@ namespace StackAndQueue.Classes
             {
                 return Front.Value;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException )
             {
 
                 throw new NullReferenceException("No node found");
