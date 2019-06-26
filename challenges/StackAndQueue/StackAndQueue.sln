@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueue", "StackAndQueue\StackAndQueue.csproj", "{45F201FD-0957-4943-92CC-CA1E90FA1367}"
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueue", "StackAndQueue\StackAndQueue.csproj", "{45F201FD-0957-4943-92CC-CA1E90FA1367}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackAndQueueTests", "StackAndQueueTests\StackAndQueueTests.csproj", "{058381F4-DABD-42B4-B22C-35D0EF14A66F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueueTests", "StackAndQueueTests\StackAndQueueTests.csproj", "{058381F4-DABD-42B4-B22C-35D0EF14A66F}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
