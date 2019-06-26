@@ -107,10 +107,6 @@ namespace StackAndQueueTests
             Queue<int> myQueue = new Queue<int>(22);
             myQueue.Enqueue(33);
             myQueue.Enqueue(67);
-
-            
-            
-
             Assert.Equal(0, myQueue.Front.Value);
 
         }
