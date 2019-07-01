@@ -26,6 +26,7 @@ namespace Tree.Classes
             return traversal;
         }
 
+        //adds the root fist 
         public void PreOrder(Node node, List<int> traversal)
         {
             //adds the value  of the node to the list so evertime a recursion happens the node comming in will be added 
@@ -50,17 +51,43 @@ namespace Tree.Classes
             return traversal;
         }
 
+        //same as in order but adds the element in a diffrent position with the root in the middle 
         public void InOrder(Node node, List<int> traversal)
         {
             if(node.LeftChild != null)
             {
-                
+                InOrder(node.LeftChild, traversal);
+            }
+
+            traversal.Add((int)node.Value);
+
+            if(node.RightChild != null)
+            {
+                InOrder(node.RightChild, traversal);
             }
         }
 
-        public void Postorder()
+        //put the root in the end of the list 
+        public List<int> PostOrder(Node node)
         {
+            List<int> traversal = new List<int>();
+            PostOrder(node, traversal);
+            return traversal;
+        }
+        
+        public void PostOrder(Node node, List<int> traversal)
+        {
+            if(node.LeftChild != null)
+            {
+                PostOrder(node.LeftChild, traversal);
+            }
 
+            if(node.RightChild != null)
+            {
+                PostOrder(node.RightChild, traversal);
+            }
+
+            traversal.Add((int)node.Value);
         }
 
         class BinarySearchTree
