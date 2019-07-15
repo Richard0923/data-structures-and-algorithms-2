@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertSortAlgo", "InsertSortAlgo\InsertSortAlgo.csproj", "{F31710E1-BE55-4704-B88E-A991F14A19DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertAlgoTest", "InsertAlgoTest\InsertAlgoTest.csproj", "{5F967A18-B364-4D46-B887-231A8D1DBA5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F31710E1-BE55-4704-B88E-A991F14A19DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31710E1-BE55-4704-B88E-A991F14A19DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31710E1-BE55-4704-B88E-A991F14A19DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31710E1-BE55-4704-B88E-A991F14A19DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F967A18-B364-4D46-B887-231A8D1DBA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F967A18-B364-4D46-B887-231A8D1DBA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F967A18-B364-4D46-B887-231A8D1DBA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F967A18-B364-4D46-B887-231A8D1DBA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B997418A-EC4A-478B-A998-6E2A98B3FB6E}
+	EndGlobalSection
+EndGlobal
