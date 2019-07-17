@@ -7,9 +7,10 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
             int[] testArray = { 5, 78, 23, 45, 10, 77};
-            MergeSort(testArray);
+            int[] sortedtest = MergeSort(testArray);
+            Console.WriteLine("Hello World!");
         }
 
         public static int[] MergeSort(int[] array)
@@ -19,15 +20,31 @@ namespace MergeSort
             if(n > 1)
             {
                 int mid = n / 2;
-
-                int[] left = new int[0 + mid];
+                int[] left = new int[mid];
                 int[] right = new int[n - mid];
 
-                MergeSort(left);//maybe set as variables 
+                for (int i = 0; i < mid; i++)
+                {
+                    left[i] = array[i];
+                    
+                }
+
+                int x = 0;
+                for (int j = mid; j < array.Length; j++)
+                {
+                    right[x] = array[j];
+                    x++;
+                }
+                
+                
+
+                MergeSort(left);
                 MergeSort(right);
                 int[] results = Merge(left, right, array);
+                return results;
             }
-                return array;
+            return null;
+
         }
 
         public static int[] Merge(int[] left, int[] right, int[] array)
@@ -35,31 +52,25 @@ namespace MergeSort
             int i = 0;
             int j = 0;
             int k = 0;
+            int[] results = new int[right.Length + left.Length];
 
             while(i < left.Length && j < right.Length)
             {
+
                 if(left[i] <= right[j])
                 {
-                    array[k] = left[i];
+                    results[k] = left[i];
                     i++;
                 }
                 else
                 {
-                    array[k] = right[j];
+                    results[k] = right[j];
                     j++;
+                    
                 }
                 k++;
             }
-
-            if(i == left.Length)
-            {
-                right.CopyTo(array, left.Length);
-            }
-            else
-            {
-                left.CopyTo(array, 0);
-            }
-            return array;
+            return results;
         }
     }
 }
