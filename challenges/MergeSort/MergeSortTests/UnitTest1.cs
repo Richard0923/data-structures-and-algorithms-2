@@ -9,9 +9,9 @@ namespace MergeSortTests
         [Fact]
         public void MergeSortTest()
         {
-            int[] testArray = { 5, 78, 23, 45, 10, 77 };
+            int[] testArray = { 5, 23, 45, 99, 10, 77 };
 
-            int[] sortedArray = { 5, 10, 23, 45, 77, 78 };
+            int[] sortedArray = { 5, 10, 23, 45, 77, 99 };
             
             int[] newArray = Program.MergeSort(testArray);
 

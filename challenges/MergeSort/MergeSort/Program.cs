@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 
 namespace MergeSort
@@ -8,7 +11,7 @@ namespace MergeSort
         static void Main(string[] args)
         {
             
-            int[] testArray = { 5, 78, 23, 45, 10, 77};
+            int[] testArray = { 5, 78, 23, 45};
             int[] sortedtest = MergeSort(testArray);
             Console.WriteLine("Hello World!");
         }
@@ -26,7 +29,6 @@ namespace MergeSort
                 for (int i = 0; i < mid; i++)
                 {
                     left[i] = array[i];
-                    
                 }
 
                 int x = 0;
@@ -36,14 +38,12 @@ namespace MergeSort
                     x++;
                 }
                 
-                
-
                 MergeSort(left);
+
                 MergeSort(right);
-                int[] results = Merge(left, right, array);
-                return results;
+                Merge(left, right, array);
             }
-            return null;
+            return array;
 
         }
 
@@ -52,25 +52,33 @@ namespace MergeSort
             int i = 0;
             int j = 0;
             int k = 0;
-            int[] results = new int[right.Length + left.Length];
 
             while(i < left.Length && j < right.Length)
             {
 
                 if(left[i] <= right[j])
                 {
-                    results[k] = left[i];
+                    array[k] = left[i];
                     i++;
                 }
                 else
                 {
-                    results[k] = right[j];
+                    array[k] = right[j];
                     j++;
                     
                 }
                 k++;
             }
-            return results;
+
+            if(i == left.Length)
+            {
+                array[k] = right[j];
+            }
+            else
+            {
+                array[k] = left[i];
+            }
+            return array;
         }
     }
 }
