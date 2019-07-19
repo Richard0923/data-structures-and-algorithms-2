@@ -15,7 +15,9 @@ by using recursion.
 Merge Sort is a sorting algorithm that splits and array in 2 and uses recursion to sort the input array.
 
 Merge Sort's efficiency is:
+
 Time: O(n Log n)
+
 Space: O(n)
 
 ## Diagram 
