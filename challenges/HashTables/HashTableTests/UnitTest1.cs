@@ -1,4 +1,4 @@
-using System;
+using HashTables.Classes;
 using Xunit;
 
 namespace HashTableTests
@@ -6,9 +6,9 @@ namespace HashTableTests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void AddingToHashTableTest()
         {
-
+            HashTable test =  new HashTable(16)
         }
     }
 }
