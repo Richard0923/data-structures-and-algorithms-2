@@ -14,6 +14,7 @@ The approach we took was populating a hash table with the values of the first tr
 Big O is
 
 Time: O(h) h = The hieght of the tree.
+
 Space: O(2n)
 
 ## Solution
