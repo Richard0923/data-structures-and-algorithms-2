@@ -4,18 +4,24 @@ using System.Text;
 
 namespace HashTables.Classes
 {
-    class HashTable
+    public class HashTable
     {
-
-
         public LinkedList<Node>[] Map { get; set; }
 
+        /// <summary>
+        /// Creates a new Hash Table
+        /// </summary>
+        /// <param name="size"></param>
         public HashTable(int size)
         {
             Map = new LinkedList<Node>[size];
         }
        
-
+        /// <summary>
+        /// Hashes the key given 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns>Returns the hashed key</returns>
         public int GetHash(string key)
         {
             int total = 0;
