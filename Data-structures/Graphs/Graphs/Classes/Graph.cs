@@ -54,7 +54,6 @@ namespace Graphs.Classes
             foreach (var item in AdjacencyList[findMe])
             {
                 vertices.Add(item.Vertex, item.Weight);
-                
             }
             
             return vertices;
