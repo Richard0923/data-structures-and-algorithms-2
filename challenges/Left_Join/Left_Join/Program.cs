@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Left_Join
 {
@@ -7,6 +8,13 @@ namespace Left_Join
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        public static Hashtable LeftJoin(Hashtable hash1, Hashtable hash2)
+        {
+            ICollection    
+
+            return hash1;
         }
     }
 }
