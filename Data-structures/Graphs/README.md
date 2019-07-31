@@ -13,25 +13,40 @@ Implement A graph that has 5 Methods:
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-AddNode() 
+### AddVertex() 
+
 Time: O(1) Its Just adding the vertex to the graph. 
+
 Space: O(n) Creates a new Index in the graph and adds the value being given. 
 
-AddEdge() 
+
+### AddEdge() 
+
 Time: O(1) Its Just adding the edge to the graph. 
+
 Space: O(n) Creates a new edge in the graph and adds the weight being given. 
 
-GetNodes()
+
+### GetVertices()
+
 Time: O(n) It goes threw the Graph and adds every Vertex to a List. 
+
 Space: O(n) Creates a new list and populates that list with all the Vertices inside that graph. 
 
-GetNeighbors()
-Time: O(n) It goes threw the Graph and adds every Edge to a Dictionary. 
-Space: O(n) Creates a new Dictionary and populates that Dictionary with all the Edges inside that graph. 
 
-Size()
+### GetNeighbors()
+
+Time: O(n) It goes threw the Graph and adds every Edge to a Dictionary. 
+
+Space: O(n) Creates a new Dictionary and populates that Dictionary with all the Edges inside that graph.
+
+
+### Size()
+
 Time: O(1) Returns the size int property. 
+
 Space: O(1)  
+
 
 
 ## API
