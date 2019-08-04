@@ -12,37 +12,32 @@ namespace Get_Edges
             Console.WriteLine("Hello World!");
         }
 
-        public void GetEdges(Graph<string> graph, string[] pathArray)
+        public ValueTuple<bool, int> GetEdges(Graph<string> graph, string[] pathArray)
         {
-            List<Vertex<string>> visted = new List<Vertex<string>>();
-            Queue<Vertex<string>> breadth = new Queue<Vertex<string>>();
+            Queue<Vertex<string>> queue = new Queue<Vertex<string>>();
+            HashSet<Vertex<string>> visited = new HashSet<Vertex<string>>();
 
-            //vertex to hold the value of the input array
-            Vertex<string> arrayValue = new Vertex<string>(pathArray[0]);
+            Vertex<string> root = graph.GetVertex(pathArray[0]);
+            int totalPrice = 0;
+            bool flightPossiable = false;
 
-            if (graph.AdjacencyList.ContainsKey(arrayValue))
+            if(root.Value == null)
             {
-                breadth.Enqueue(arrayValue);
+                return (flightPossiable, totalPrice);
             }
+            queue.Enqueue(root);
+            visited.Add(root);
+
+            while(queue.Count > 0)
+            {
+                var vertex = queue.Dequeue();
+                //need to keep working on it 
+
+            }
+
+
+
             
-            while(breadth.TryPeek(out arrayValue))
-            {
-                Vertex<string> front = breadth.Dequeue();
-
-                if (visted.Contains(front))
-                {
-                    continue;
-                }
-                visted.Add(front);
-
-                foreach (var nieghbors in graph.AdjacencyList[front])
-                {
-                    if (!visted.Contains(nieghbors))
-                    {
-                        //need to grab the price and if  there is a path to 
-                    }
-                }
-            }
         }
     }
 }

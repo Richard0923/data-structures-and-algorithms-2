@@ -6,8 +6,8 @@ namespace Get_Edges.Classes
 {
     public class Vertex<T>
     {
-        public T Value { get; set; }
-        public Vertex(T value)
+        public T  Value { get; set; }
+        public Vertex( T value)
         {
             Value = value;
         }
