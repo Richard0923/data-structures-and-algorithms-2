@@ -1,4 +1,6 @@
-# Challenge Summary
+# DSA Practice
+
+## Challenge Summary
 <!-- Short summary or background information -->
 1. Calculate the Height of a binary tree.
 2. Check of a binary tree is balanced.
