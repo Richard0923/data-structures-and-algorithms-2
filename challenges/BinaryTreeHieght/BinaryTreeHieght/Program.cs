@@ -15,10 +15,12 @@ namespace BinaryTreeHieght
             testy.Root.RightChild = new Node(6);
             testy.Root.LeftChild.LeftChild = new Node(2);
             testy.Root.LeftChild.RightChild = new Node(3);
-            testy.Root.LeftChild.RightChild = new Node(8);
-            testy.Root.LeftChild.LeftChild = new Node(7);
+            testy.Root.RightChild.RightChild = new Node(8);
+            testy.Root.RightChild.LeftChild = new Node(7);
 
             Console.WriteLine(CalculateBinaryTreeHieght(testy.Root));
+            Console.WriteLine(IsBalanced(testy.Root));
+            Console.WriteLine(IsAncestor(4, 2, testy.Root));
             Console.ReadLine();
 
 
@@ -49,6 +51,55 @@ namespace BinaryTreeHieght
                     return (rHieght + 1);
                 }
             }
+        }
+
+        /// <summary>
+        /// Checks if a binary tree is balanced 
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns>Returns a bool</returns>
+        public static bool IsBalanced(Node node)
+        {
+          
+            if(node == null)
+            {
+                return false;
+            }
+
+            int lH = CalculateBinaryTreeHieght(node.LeftChild);
+            int rH = CalculateBinaryTreeHieght(node.RightChild);
+
+            if ((lH - rH) <= 1)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool IsAncestor(int v1, int v2, Node root)
+        {
+            Node ancestor = new Node(0);
+            if(root == null)
+            {
+                return false;
+            }
+            IsAncestor(v1, v2, root.LeftChild);
+            IsAncestor(v1, v2, root.RightChild);
+
+            if ( root.Value == v2)
+            {
+                ancestor = root;
+               
+            }
+            if (root.Value == v1)
+            {
+
+            }
+            
+
+
+
+            return false; 
         }
     }
 }

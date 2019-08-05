@@ -24,7 +24,7 @@ namespace BinaryTreeHieght.Classes
             return traversal;
         }
 
-        //adds the root fist 
+        //adds the root first 
         public void PreOrder(Node node, List<int> traversal)
         {
             //adds the value  of the node to the list so evertime a recursion happens the node comming in will be added 

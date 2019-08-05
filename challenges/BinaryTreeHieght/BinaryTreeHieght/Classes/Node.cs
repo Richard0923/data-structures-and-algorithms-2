@@ -6,7 +6,7 @@ namespace BinaryTreeHieght.Classes
 {
     class Node
     {
-        public Object Value { get; set; }
+        public int Value { get; set; }
         public Node LeftChild { get; set; }
         public Node RightChild { get; set; }
 
