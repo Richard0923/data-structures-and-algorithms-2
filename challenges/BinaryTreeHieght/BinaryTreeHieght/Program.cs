@@ -86,14 +86,10 @@ namespace BinaryTreeHieght
             IsAncestor(v1, v2, root.LeftChild);
             IsAncestor(v1, v2, root.RightChild);
 
-            if ( root.Value == v2)
+            if (root.Value == v1 || root.Value == v2)
             {
                 ancestor = root;
-               
-            }
-            if (root.Value == v1)
-            {
-
+               //have an if statment to check of the ancestor value is greater than one 
             }
             
 
